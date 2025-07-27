@@ -70,7 +70,7 @@ pydocstyle.convention = "google"
 flake8-quotes.inline-quotes = "single"
 
 [tool.ruff.lint.per-file-ignores]
-"*_test.py" = ["PLR2004", "S101"] # Allow magic values and assertions in tests.
+"*_test.py" = ["PLC2701", "PLR2004", "S101"] # Allow private imports, magic values, and assertions in tests.
 
 [tool.mypy]
 strict = true
