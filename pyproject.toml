@@ -37,6 +37,11 @@ Source = "https://github.com/bsoyka/aoc-data"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build]
+include = [
+  "aoc_data/data/**/*.json",
+]
+
 [tool.poe.tasks]
 _format = "ruff format"
 _lint = "ruff check --fix"
