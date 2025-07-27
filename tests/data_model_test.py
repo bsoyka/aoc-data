@@ -3,7 +3,7 @@
 from hypothesis import given
 from hypothesis import strategies as st
 
-from aoc_data import AdventOfCodeData
+from aoc_data.models import AdventOfCodeData
 
 
 @given(
