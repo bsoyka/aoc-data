@@ -15,9 +15,10 @@ inputs.
 
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/aoc-data)](https://pypi.org/project/aoc-data/)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/aoc-data.svg)](https://pypi.org/project/aoc-data)
-[![Testing Status](https://img.shields.io/github/actions/workflow/status/bsoyka/aoc-data/test.yml?branch=main&label=tests)](https://github.com/bsoyka/aoc-data/actions?query=workflow%3A%22Test+with+pytest%22)
+[![Testing Status](https://img.shields.io/github/actions/workflow/status/bsoyka/aoc-data/test.yml?branch=main&label=tests)](https://github.com/bsoyka/aoc-data/actions/workflows/test.yml)
 [![License](https://img.shields.io/pypi/l/aoc-data)](https://github.com/bsoyka/aoc-data/blob/master/LICENSE)
 [![Version](https://img.shields.io/pypi/v/aoc-data?label=latest)](https://pypi.org/project/aoc-data)
+[![Codecov](https://codecov.io/github/bsoyka/aoc-data/graph/badge.svg?token=qmQtG2Kctt)](https://codecov.io/github/bsoyka/aoc-data)
 [![GitHub Repo stars](https://img.shields.io/github/stars/bsoyka/aoc-data)](https://github.com/bsoyka/aoc-data)
 
 ## Installation
