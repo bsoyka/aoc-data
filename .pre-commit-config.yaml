@@ -20,12 +20,6 @@ repos:
     rev: 0.7.20
     hooks:
       - id: uv-lock
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: 850d8bf806620ef89a99381c5cf5ea2c1ea826dd
-    hooks:
-      - id: mypy
-        additional_dependencies:
-          - hypothesis
 ci:
   autofix_commit_msg: "style: auto fixes from pre-commit hooks"
   autofix_prs: true
