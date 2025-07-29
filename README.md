@@ -23,7 +23,7 @@ inputs.
 
 ## Installation
 
-aoc-data is [available on PyPI](https://pypi.org/project/advent-of-code-ocr/).
+aoc-data is [available on PyPI](https://pypi.org/project/aoc-data/).
 Install it with your preferred package manager:
 
 ```sh
