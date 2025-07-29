@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 from typing import TypedDict, cast
 
-from .errors import DataNotFoundError
-from .models import AdventOfCodeData
+from aoc_data.errors import DataNotFoundError
+from aoc_data.models import AdventOfCodeData
 
 __all__ = ['AdventOfCodeData']
 
