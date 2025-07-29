@@ -23,12 +23,13 @@ classifiers = [
 dev = [
     "bump-my-version>=1.2.1",
     "hypothesis>=6.136.4",
+    "mypy>=1.17.0",
     "poethepoet>=0.36.0",
     "pre-commit>=4.2.0",
     "pytest>=8.4.1",
     "pytest-cov>=6.2.1",
     "ruff>=0.12.5",
-    "tox>=4.28.3",
+    "tox-uv>=1.26.2",
 ]
 
 [project.urls]
@@ -62,15 +63,33 @@ quote-style = "single"
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = [
-    "CPY001", # Don't require file-level copyright notices.
-    "COM812", # Ignore trailing commas. Causes conflicts between checker and formatter.
-    "PLR6301" # Ignore making methods into functions, class methods, or static methods.
+    "CPY",     # Checks for a file-level copyright statement.
+    "COM812",  # Checks for the absence of trailing commas. Not recommended with formatter.
+    "COM819",  # Checks for prohibited trailing commas. Not recommended with formatter.
+    "FIX002",  # Checks for to-do comments.
+    "PLR6301", # Checks if methods can be made into functions, class methods, or static methods.
+    "TD002",   # Checks for missing author in to-do comments.
 ]
 pydocstyle.convention = "google"
 flake8-quotes.inline-quotes = "single"
+flake8-tidy-imports.ban-relative-imports = "all"
 
 [tool.ruff.lint.per-file-ignores]
-"*_test.py" = ["PLC2701", "PLR2004", "S101"] # Allow private imports, magic values, and assertions in tests.
+"*_test.py" = [
+    "INP",     # Checks for packages missing an __init__.py file.
+    "PLR2004", # Checks for "magic" values.
+    "S101",    # Checks for the use of assert statements.
+]
+
+[tool.tox]
+requires = ["tox>=4.28.1"]
+env_list = ["3.9", "3.10", "3.11", "3.12", "3.13", "type"]
+
+[tool.tox.env_run_base]
+commands = [["pytest"]]
+
+[tool.tox.env.type]
+commands = [["mypy", "."]]
 
 [tool.mypy]
 strict = true
