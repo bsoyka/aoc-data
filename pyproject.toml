@@ -77,6 +77,7 @@ flake8-tidy-imports.ban-relative-imports = "all"
 [tool.ruff.lint.per-file-ignores]
 "*_test.py" = [
     "INP",     # Checks for packages missing an __init__.py file.
+    "PLC2701", # Checks for private name imports.
     "PLR2004", # Checks for "magic" values.
     "S101",    # Checks for the use of assert statements.
 ]
