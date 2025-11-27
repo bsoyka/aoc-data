@@ -4,7 +4,7 @@ version = "0.0.1"
 description = "Real data to test your Advent of Code solutions"
 authors = [{ name = "Ben Soyka", email = "hello@bsoyka.me" }]
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10.2"
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",
@@ -12,7 +12,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -21,15 +20,16 @@ classifiers = [
 
 [dependency-groups]
 dev = [
-    "bump-my-version>=1.2.1",
-    "hypothesis>=6.136.4",
-    "mypy>=1.17.0",
+    "bump-my-version>=1.2.4",
+    "hypothesis>=6.148.2",
+    "mypy>=1.18.2",
     "poethepoet>=0.36.0",
-    "pre-commit>=4.2.0",
+    "pre-commit>=4.5.0",
+    "pydantic-core>=2.41.5",
     "pytest>=8.4.1",
     "pytest-cov>=6.2.1",
-    "ruff>=0.12.5",
-    "tox-uv>=1.26.2",
+    "ruff>=0.14.6",
+    "tox-uv>=1.27.0",
 ]
 
 [project.urls]

@@ -31,7 +31,7 @@ $ uv add aoc-data
 $ pip install aoc-data
 ```
 
-aoc-data officially supports Python 3.9+.
+aoc-data officially supports Python 3.10.2+.
 
 ---
 
